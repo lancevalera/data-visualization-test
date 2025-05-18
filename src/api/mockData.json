@@ -1,0 +1,362 @@
+[
+  {
+    "date": "2023-06-30",
+    "campaign": "Campaign A",
+    "impressions": 7314,
+    "clicks": 39
+  },
+  {
+    "date": "2023-06-30",
+    "campaign": "Campaign B",
+    "impressions": 6988,
+    "clicks": 18
+  },
+  {
+    "date": "2023-07-01",
+    "campaign": "Campaign A",
+    "impressions": 2409,
+    "clicks": 33
+  },
+  {
+    "date": "2023-07-01",
+    "campaign": "Campaign B",
+    "impressions": 9253,
+    "clicks": 9
+  },
+  {
+    "date": "2023-07-02",
+    "campaign": "Campaign A",
+    "impressions": 2525,
+    "clicks": 50
+  },
+  {
+    "date": "2023-07-02",
+    "campaign": "Campaign B",
+    "impressions": 8940,
+    "clicks": 18
+  },
+  {
+    "date": "2023-07-03",
+    "campaign": "Campaign A",
+    "impressions": 4687,
+    "clicks": 43
+  },
+  {
+    "date": "2023-07-03",
+    "campaign": "Campaign B",
+    "impressions": 9657,
+    "clicks": 8
+  },
+  {
+    "date": "2023-07-04",
+    "campaign": "Campaign A",
+    "impressions": 7092,
+    "clicks": 49
+  },
+  {
+    "date": "2023-07-04",
+    "campaign": "Campaign B",
+    "impressions": 3223,
+    "clicks": 6
+  },
+  {
+    "date": "2023-07-05",
+    "campaign": "Campaign A",
+    "impressions": 4363,
+    "clicks": 10
+  },
+  {
+    "date": "2023-07-05",
+    "campaign": "Campaign B",
+    "impressions": 422,
+    "clicks": 12
+  },
+  {
+    "date": "2023-07-06",
+    "campaign": "Campaign A",
+    "impressions": 8599,
+    "clicks": 47
+  },
+  {
+    "date": "2023-07-06",
+    "campaign": "Campaign B",
+    "impressions": 8100,
+    "clicks": 17
+  },
+  {
+    "date": "2023-07-07",
+    "campaign": "Campaign A",
+    "impressions": 5451,
+    "clicks": 27
+  },
+  {
+    "date": "2023-07-07",
+    "campaign": "Campaign B",
+    "impressions": 9745,
+    "clicks": 20
+  },
+  {
+    "date": "2023-07-08",
+    "campaign": "Campaign A",
+    "impressions": 5017,
+    "clicks": 23
+  },
+  {
+    "date": "2023-07-08",
+    "campaign": "Campaign B",
+    "impressions": 9044,
+    "clicks": 16
+  },
+  {
+    "date": "2023-07-09",
+    "campaign": "Campaign A",
+    "impressions": 5500,
+    "clicks": 38
+  },
+  {
+    "date": "2023-07-09",
+    "campaign": "Campaign B",
+    "impressions": 6059,
+    "clicks": 20
+  },
+  {
+    "date": "2023-07-10",
+    "campaign": "Campaign A",
+    "impressions": 1124,
+    "clicks": 29
+  },
+  {
+    "date": "2023-07-10",
+    "campaign": "Campaign B",
+    "impressions": 9904,
+    "clicks": 15
+  },
+  {
+    "date": "2023-07-11",
+    "campaign": "Campaign A",
+    "impressions": 2352,
+    "clicks": 32
+  },
+  {
+    "date": "2023-07-11",
+    "campaign": "Campaign B",
+    "impressions": 3770,
+    "clicks": 9
+  },
+  {
+    "date": "2023-07-12",
+    "campaign": "Campaign A",
+    "impressions": 8453,
+    "clicks": 18
+  },
+  {
+    "date": "2023-07-12",
+    "campaign": "Campaign B",
+    "impressions": 4118,
+    "clicks": 16
+  },
+  {
+    "date": "2023-07-13",
+    "campaign": "Campaign A",
+    "impressions": 2162,
+    "clicks": 37
+  },
+  {
+    "date": "2023-07-13",
+    "campaign": "Campaign B",
+    "impressions": 9591,
+    "clicks": 19
+  },
+  {
+    "date": "2023-07-14",
+    "campaign": "Campaign A",
+    "impressions": 1804,
+    "clicks": 15
+  },
+  {
+    "date": "2023-07-14",
+    "campaign": "Campaign B",
+    "impressions": 8022,
+    "clicks": 20
+  },
+  {
+    "date": "2023-07-15",
+    "campaign": "Campaign A",
+    "impressions": 5017,
+    "clicks": 40
+  },
+  {
+    "date": "2023-07-15",
+    "campaign": "Campaign B",
+    "impressions": 3991,
+    "clicks": 17
+  },
+  {
+    "date": "2023-07-16",
+    "campaign": "Campaign A",
+    "impressions": 4465,
+    "clicks": 32
+  },
+  {
+    "date": "2023-07-16",
+    "campaign": "Campaign B",
+    "impressions": 385,
+    "clicks": 12
+  },
+  {
+    "date": "2023-07-17",
+    "campaign": "Campaign A",
+    "impressions": 6941,
+    "clicks": 48
+  },
+  {
+    "date": "2023-07-17",
+    "campaign": "Campaign B",
+    "impressions": 641,
+    "clicks": 8
+  },
+  {
+    "date": "2023-07-18",
+    "campaign": "Campaign A",
+    "impressions": 7912,
+    "clicks": 28
+  },
+  {
+    "date": "2023-07-18",
+    "campaign": "Campaign B",
+    "impressions": 6776,
+    "clicks": 5
+  },
+  {
+    "date": "2023-07-19",
+    "campaign": "Campaign A",
+    "impressions": 6435,
+    "clicks": 15
+  },
+  {
+    "date": "2023-07-19",
+    "campaign": "Campaign B",
+    "impressions": 8946,
+    "clicks": 12
+  },
+  {
+    "date": "2023-07-20",
+    "campaign": "Campaign A",
+    "impressions": 6586,
+    "clicks": 12
+  },
+  {
+    "date": "2023-07-20",
+    "campaign": "Campaign B",
+    "impressions": 2632,
+    "clicks": 6
+  },
+  {
+    "date": "2023-07-21",
+    "campaign": "Campaign A",
+    "impressions": 8625,
+    "clicks": 37
+  },
+  {
+    "date": "2023-07-21",
+    "campaign": "Campaign B",
+    "impressions": 1109,
+    "clicks": 14
+  },
+  {
+    "date": "2023-07-22",
+    "campaign": "Campaign A",
+    "impressions": 8708,
+    "clicks": 15
+  },
+  {
+    "date": "2023-07-22",
+    "campaign": "Campaign B",
+    "impressions": 2939,
+    "clicks": 14
+  },
+  {
+    "date": "2023-07-23",
+    "campaign": "Campaign A",
+    "impressions": 546,
+    "clicks": 49
+  },
+  {
+    "date": "2023-07-23",
+    "campaign": "Campaign B",
+    "impressions": 7256,
+    "clicks": 16
+  },
+  {
+    "date": "2023-07-24",
+    "campaign": "Campaign A",
+    "impressions": 9719,
+    "clicks": 15
+  },
+  {
+    "date": "2023-07-24",
+    "campaign": "Campaign B",
+    "impressions": 8888,
+    "clicks": 8
+  },
+  {
+    "date": "2023-07-25",
+    "campaign": "Campaign A",
+    "impressions": 4591,
+    "clicks": 30
+  },
+  {
+    "date": "2023-07-25",
+    "campaign": "Campaign B",
+    "impressions": 1476,
+    "clicks": 11
+  },
+  {
+    "date": "2023-07-26",
+    "campaign": "Campaign A",
+    "impressions": 1910,
+    "clicks": 17
+  },
+  {
+    "date": "2023-07-26",
+    "campaign": "Campaign B",
+    "impressions": 8480,
+    "clicks": 11
+  },
+  {
+    "date": "2023-07-27",
+    "campaign": "Campaign A",
+    "impressions": 9271,
+    "clicks": 28
+  },
+  {
+    "date": "2023-07-27",
+    "campaign": "Campaign B",
+    "impressions": 6743,
+    "clicks": 13
+  },
+  {
+    "date": "2023-07-28",
+    "campaign": "Campaign A",
+    "impressions": 5442,
+    "clicks": 32
+  },
+  {
+    "date": "2023-07-28",
+    "campaign": "Campaign B",
+    "impressions": 3784,
+    "clicks": 17
+  },
+  {
+    "date": "2023-07-29",
+    "campaign": "Campaign A",
+    "impressions": 391,
+    "clicks": 46
+  },
+  {
+    "date": "2023-07-29",
+    "campaign": "Campaign B",
+    "impressions": 2336,
+    "clicks": 12
+  }
+]

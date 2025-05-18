@@ -1,7 +1,15 @@
-import React from 'react';
+import { useQuery } from '../../hooks';
 
-export const Reports = () => (
-	<div>
-		Hello
-	</div>
-)
+export const Reports = () => {
+	const [data, _setQuery] = useQuery();
+	const { loading, result } = data;
+
+	if (loading) {
+		return 'Loading'
+	}
+	return (
+		<div>
+			{JSON.stringify(result)}
+		</div>
+	)
+}

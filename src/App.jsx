@@ -1,5 +1,5 @@
 import './App.css'
-import { Reports } from './pages/reports'
+import { Reports } from './pages'
 
 function App() {
   return (

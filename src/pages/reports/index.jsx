@@ -1,15 +1,8 @@
-import { useQuery } from '../../hooks';
+import { TotalMetricsGraph } from './components';
 
-export const Reports = () => {
-	const [data, _setQuery] = useQuery();
-	const { loading, result } = data;
-
-	if (loading) {
-		return 'Loading'
-	}
-	return (
-		<div>
-			{JSON.stringify(result)}
-		</div>
-	)
-}
+export const Reports = () => (
+	<div>
+		<TotalMetricsGraph metric="impressions" />
+		<TotalMetricsGraph metric="clicks" />
+	</div>
+)

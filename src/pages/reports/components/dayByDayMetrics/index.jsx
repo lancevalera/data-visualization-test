@@ -1,31 +1,10 @@
 import { LineChart, CartesianGrid, XAxis, YAxis, Tooltip, Line, ResponsiveContainer } from 'recharts';
 import { useQuery } from 'src/hooks';
 import { Card } from 'src/components';
+import { dataReducer } from './helpers';
 
-const dataReducer = (field) => (data) => {
-  const totalMetricsByDate = data.reduce((acc, current) => {
-    const { date, impressions, clicks } = current
-    const combinedActivity = impressions + clicks;
-    return {
-      ...acc,
-      [date]: {
-        totalClicks: (acc[date]?.totalClicks || 0) + clicks,
-        totalImpressions: (acc[date]?.totalImpressions || 0) + impressions,
-        combinedActivity: (acc[date]?.combinedActivity || 0) + combinedActivity
-      }
-    }
-  }, {});
-  console.log({ totalMetricsByDate });
-  return Object.keys((totalMetricsByDate)).map((date) => ({
-    name: date,
-    totalCombinedActivity: totalMetricsByDate[date].combinedActivity,
-    totalClicks: totalMetricsByDate[date].totalClicks,
-    totalImpressions: totalMetricsByDate[date].totalImpressions
-  })); 
-};
-
-export const DayByDayGraph = ({ metric, title }) => {
-  const [data, _setQuery] = useQuery('', dataReducer(metric));
+export const DayByDayGraph = ({ title }) => {
+  const [data, _setQuery] = useQuery('', dataReducer);
   const { loading, result } = data;
   if (loading) {
     return 'Loading'

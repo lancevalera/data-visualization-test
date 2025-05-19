@@ -1,18 +1,7 @@
 import { BarChart, Bar, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import { useQuery } from 'src/hooks';
 import { Card } from 'src/components';
-
-const dataReducer = (field) => (data) => {
-  const totalMetricsByCampaign = data.reduce((acc, current) => {
-    const value = current[field]
-    const { campaign } = current
-    return { ...acc, [campaign]: (acc[campaign] || 0) + value }
-  }, {});
-  return Object.keys((totalMetricsByCampaign)).map((campaignName) => ({
-    name: campaignName,
-    metric: totalMetricsByCampaign[campaignName]
-  })); 
-};
+import { dataReducer } from './helpers';
 
 export const TotalMetricsGraph = ({ metric, title }) => {
   const [data, _setQuery] = useQuery('', dataReducer(metric));

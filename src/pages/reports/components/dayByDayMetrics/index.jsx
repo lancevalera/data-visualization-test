@@ -10,8 +10,7 @@ export const DayByDayGraph = ({ title }) => {
   return (
     <ChartContainer title={title} loading={loading}>
       <ResponsiveContainer height={300} width="100%">
-        <LineChart data={result}
-          margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+        <LineChart data={result}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
           <YAxis />

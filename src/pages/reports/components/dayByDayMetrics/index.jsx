@@ -2,6 +2,7 @@ import { LineChart, CartesianGrid, XAxis, YAxis, Tooltip, Line, ResponsiveContai
 import { useQuery } from 'src/hooks';
 import { Card } from 'src/components';
 import { dataReducer } from './helpers';
+import { ChartContainer } from '../common';
 
 export const DayByDayGraph = ({ title }) => {
   const [data, _setQuery] = useQuery('', dataReducer);
@@ -11,8 +12,7 @@ export const DayByDayGraph = ({ title }) => {
   }
 
   return (
-    <Card>
-      <p className="text-lg text-left mb-8">{title}</p>
+    <ChartContainer title={title}>
       <ResponsiveContainer height={300} width="100%">
         <LineChart data={result}
           margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
@@ -23,6 +23,6 @@ export const DayByDayGraph = ({ title }) => {
           <Line type="monotone" dataKey="totalCombinedActivity" stroke="#82ca9d" />
         </LineChart>
       </ResponsiveContainer>
-    </Card>
+    </ChartContainer>
   )
 }

@@ -1,7 +1,7 @@
 import { BarChart, Bar, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import { useQuery } from 'src/hooks';
-import { Card } from 'src/components';
 import { dataReducer } from './helpers';
+import { ChartContainer } from '../common';
 
 export const TotalMetricsGraph = ({ metric, title }) => {
   const [data, _setQuery] = useQuery('', dataReducer(metric));
@@ -12,8 +12,7 @@ export const TotalMetricsGraph = ({ metric, title }) => {
   }
 
   return (
-    <Card>
-      <p className="text-lg text-left mb-8">{title}</p>
+    <ChartContainer title={title}>
       <ResponsiveContainer height={300} width="100%">
         <BarChart data={result}>
           <CartesianGrid strokeDasharray="3 3" />
@@ -23,6 +22,6 @@ export const TotalMetricsGraph = ({ metric, title }) => {
           <Bar dataKey="metric" fill="#8884d8" />
         </BarChart>
       </ResponsiveContainer>
-    </Card>
+    </ChartContainer>
   )
 }

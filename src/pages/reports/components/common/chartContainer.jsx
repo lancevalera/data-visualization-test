@@ -1,8 +1,15 @@
-import { Card } from 'src/components';
+import { Card, Spinner } from 'src/components';
 
-export const ChartContainer = ({ title, children }) => (
+// component to ensure consistent styling of title, card, and loading spinner between charts
+export const ChartContainer = ({ title, loading, children }) => (
   <Card>
     <p className="text-lg text-left mb-8">{title}</p>
-    {children}
+    {
+      loading ? (
+        <Spinner />
+      ) : (
+        children
+      )
+    }
   </Card>
 )

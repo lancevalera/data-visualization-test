@@ -1,10 +1,8 @@
 import './App.css'
 import { Reports } from './pages'
 
-function App() {
-  return (
-    <Reports />
-  )
-}
+const App = () => (
+  <Reports />
+)
 
 export default App

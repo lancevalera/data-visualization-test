@@ -7,12 +7,8 @@ export const TotalMetricsGraph = ({ metric, title }) => {
   const [data, _setQuery] = useQuery('', dataReducer(metric));
   const { loading, result } = data;
 
-  if (loading) {
-    return 'Loading'
-  }
-
   return (
-    <ChartContainer title={title}>
+    <ChartContainer title={title} loading={loading}>
       <ResponsiveContainer height={300} width="100%">
         <BarChart data={result}>
           <CartesianGrid strokeDasharray="3 3" />

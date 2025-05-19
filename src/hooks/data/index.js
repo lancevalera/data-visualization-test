@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { fetch } from '../../api';
 
+// mock client for api calls
 export const useQuery = (queryString, reducer) => {
   const [loading, setLoading] = useState(true);
   const [reportData, setReportData] = useState();

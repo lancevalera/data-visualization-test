@@ -1,5 +1,6 @@
-import { BarChart, Bar, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
+import { BarChart, Bar, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import { useQuery } from 'src/hooks';
+import { Card } from 'src/components';
 
 const dataReducer = (field) => (data) => {
   const totalMetricsByCampaign = data.reduce((acc, current) => {
@@ -7,13 +8,13 @@ const dataReducer = (field) => (data) => {
     const { campaign } = current
     return { ...acc, [campaign]: (acc[campaign] || 0) + value }
   }, {});
-  return Object.keys((totalMetricsByCampaign)).map((name) => ({
-    name,
-    metric: totalMetricsByCampaign[name]
+  return Object.keys((totalMetricsByCampaign)).map((campaignName) => ({
+    name: campaignName,
+    metric: totalMetricsByCampaign[campaignName]
   })); 
 };
 
-export const TotalMetricsGraph = ({ metric }) => {
+export const TotalMetricsGraph = ({ metric, title }) => {
   const [data, _setQuery] = useQuery('', dataReducer(metric));
   const { loading, result } = data;
 
@@ -22,14 +23,17 @@ export const TotalMetricsGraph = ({ metric }) => {
   }
 
   return (
-    <div>
-      <BarChart width={730} height={250} data={result}>
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Tooltip />
-        <Bar dataKey="metric" fill="#8884d8" />
-      </BarChart>
-    </div>
+    <Card>
+      <p className="text-lg text-left mb-8">{title}</p>
+      <ResponsiveContainer height={300} width="100%">
+        <BarChart data={result}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+          <Bar dataKey="metric" fill="#8884d8" />
+        </BarChart>
+      </ResponsiveContainer>
+    </Card>
   )
 }

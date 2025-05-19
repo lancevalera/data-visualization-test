@@ -5,7 +5,7 @@ Example of an app that ingests a json object and displays data in the form of ch
 ## Installation
 1. Clone the repo
     ```sh
-    git clone https://github.com/github_username/repo_name.git
+    git clone https://github.com/lancevalera/data-visualization-test.git
     ```
 2. Install NPM packages
     ```sh

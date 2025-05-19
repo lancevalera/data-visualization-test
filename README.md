@@ -19,6 +19,6 @@ Example of an app that ingests a json object and displays data in the form of ch
 
 ### Libraries used
 * React
-* Chart.js
-* Bootstrap
+* Recharts
+* Tailwind
 

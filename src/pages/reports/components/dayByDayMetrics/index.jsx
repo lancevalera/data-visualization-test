@@ -3,6 +3,18 @@ import { useQuery } from 'src/hooks';
 import { dataReducer } from './helpers';
 import { ChartContainer } from '../common';
 
+const CustomTooltip = ({ active, payload, label }) => {
+  if (active && payload && label) {
+    return (
+      <div className="p-4 shadow-lg rounded bg-white">
+        <p className="text-md text-left mb-2">{label}</p>
+        <p className="text-md text-left">{`Total clicks and impressions: ${payload[0].value}`}</p>
+      </div>
+    );
+  }
+  return null;
+}
+
 export const DayByDayGraph = ({ title }) => {
   const [data, _setQuery] = useQuery('', dataReducer);
   const { loading, result } = data;
@@ -14,7 +26,7 @@ export const DayByDayGraph = ({ title }) => {
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
           <YAxis />
-          <Tooltip />
+          <Tooltip content={<CustomTooltip />} active/>
           <Line type="monotone" dataKey="totalCombinedActivity" stroke="#82ca9d" />
         </LineChart>
       </ResponsiveContainer>

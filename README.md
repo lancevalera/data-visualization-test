@@ -7,15 +7,16 @@ Example of an app that ingests a json object and displays data in the form of ch
     ```sh
     git clone https://github.com/lancevalera/data-visualization-test.git
     ```
-2. Install NPM packages
+2. Navigate to directory
+3. Install NPM packages
     ```sh
     npm install
     ```
-3. Run application
+4. Run application
     ```sh
     npm start
     ```
-4. Test out application at localhost:8080
+5. Test out application at localhost:8080
 
 ### Libraries used
 * React

@@ -1,7 +1,10 @@
+import { useState } from 'react';
 import { LineChart, CartesianGrid, XAxis, YAxis, Tooltip, Line, ResponsiveContainer } from 'recharts';
 import { useQuery } from 'src/hooks';
+import { Select } from 'src/components/inputs';
 import { dataReducer } from './helpers';
 import { ChartContainer } from '../common';
+import { FILTER_OPTIONS } from './constants';
 
 const CustomTooltip = ({ active, payload, label }) => {
   if (active && payload && label) {
@@ -16,11 +19,18 @@ const CustomTooltip = ({ active, payload, label }) => {
 }
 
 export const DayByDayGraph = ({ title }) => {
-  const [data, _setQuery] = useQuery('', dataReducer);
+  const [filterValue, setFilterValue] = useState();
+  const [data, _setQuery] = useQuery(filterValue, dataReducer);
   const { loading, result } = data;
-
+  console.log({ filterValue, result })
   return (
     <ChartContainer title={title} loading={loading}>
+      <Select
+        options={FILTER_OPTIONS}
+        label="Select a campaign"
+        onChange={(e) => setFilterValue(e.target.value)}
+        value={filterValue}
+      />
       <ResponsiveContainer height={300} width="100%">
         <LineChart data={result}>
           <CartesianGrid strokeDasharray="3 3" />

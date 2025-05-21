@@ -5,11 +5,11 @@ import { fetch } from '../../api';
 export const useQuery = (queryString, reducer) => {
   const [loading, setLoading] = useState(true);
   const [reportData, setReportData] = useState();
-  const [query, setQuery] = useState(queryString);
 
   useEffect(() => {
     const fetchData = async () => {
-      let response = await fetch(query);
+      setLoading(true);
+      let response = await fetch(queryString);
       if (reducer) {
         response = reducer(response)
       }
@@ -19,5 +19,5 @@ export const useQuery = (queryString, reducer) => {
     fetchData();
   }, [queryString]);
 
-  return [{ loading, result: reportData }, setQuery];
+  return [{ loading, result: reportData }];
 }

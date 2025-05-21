@@ -22,7 +22,7 @@ export const DayByDayGraph = ({ title }) => {
   const [filterValue, setFilterValue] = useState();
   const [data, _setQuery] = useQuery(filterValue, dataReducer);
   const { loading, result } = data;
-  console.log({ filterValue, result })
+
   return (
     <ChartContainer title={title} loading={loading}>
       <Select

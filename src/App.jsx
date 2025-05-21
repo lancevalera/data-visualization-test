@@ -1,8 +1,9 @@
-import './App.css'
 import { Reports } from './pages'
 
 const App = () => (
-  <Reports />
+  <div className="p-20">
+    <Reports />    
+  </div>
 )
 
 export default App

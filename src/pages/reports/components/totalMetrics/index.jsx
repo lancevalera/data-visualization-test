@@ -15,7 +15,7 @@ export const TotalMetricsGraph = ({ metric, title }) => {
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
-          <Bar dataKey="metric" fill="#8884d8" />
+          <Bar dataKey={metric} fill="#8884d8" />
         </BarChart>
       </ResponsiveContainer>
     </ChartContainer>

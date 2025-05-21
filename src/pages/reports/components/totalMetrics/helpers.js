@@ -6,6 +6,6 @@ export const dataReducer = (field) => (data) => {
   }, {});
   return Object.keys((totalMetricsByCampaign)).map((campaignName) => ({
     name: campaignName,
-    metric: totalMetricsByCampaign[campaignName]
+    [field]: totalMetricsByCampaign[campaignName]
   }));
 };
